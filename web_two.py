@@ -11,5 +11,3 @@ def index():
 	return render_template('sample_page.html')
 
 app.run(debug=True)
-
-# localhost:5000 
