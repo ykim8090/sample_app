@@ -25,11 +25,15 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container">
-                <h1>{{ price }}</h1>
+                <h1>Search Results</h1>
                 {% for gif in gifs %}
-                    {{ gif }}
+                    <img src={{gif}}>
                 {% endfor %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Back to search</a>
+                </li>
             </div>
         </div>
+
     </body>
 </html>
