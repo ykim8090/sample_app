@@ -25,15 +25,27 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container">
-                <h1>Search Results</h1>
+                <h1>Search Results for {{search}}</h1>
+                <div class="card-columns">
                 {% for gif in gifs %}
-                    <img src={{gif}}>
+                    <div class="card">
+                    <img class="card-img-top" src={{gif}} style="width:100%; height:auto;">
+                    </div>
                 {% endfor %}
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Back to search</a>
-                </li>
+                </div>
+                
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Back to search</a>
+                    </li>
+                </ul>
             </div>
         </div>
+
+            <hr>
+            <footer>
+                <p>YJSB Company 2016</p>
+            </footer>
 
     </body>
 </html>
